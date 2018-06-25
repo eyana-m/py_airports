@@ -39,11 +39,9 @@ _Out of **558 airports** in California, what's the nearest airport to **Beverly 
 | ---- | ---- |---- | ----  | ---- | ---- | ---- |  
 | 90210	| US	| CA	| California| 	Los Angeles | 34.0901	| -118.4065|  
 
+<br>
 
-
-Based on the script, the nearest airport to 90210 is:
-
-KSMO is **Santa Monica Municipal Airport**
+Based on the script, the nearest airport to 90210 is: KSMO is **Santa Monica Municipal Airport**
 
 | nearest-airport	| latitude-air | longitude-air|distance (km)|  
 | ---- | ---- |---- | ----  |   
