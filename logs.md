@@ -44,3 +44,8 @@ County
 Latitude
 Longitude
 ```
+
+
+3. Run the Model on how to calculate nearest airports
+
+4. Validate the model using google maps
