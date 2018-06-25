@@ -39,7 +39,7 @@ _Out of **558 airports** in California, what's the nearest airport to **Beverly 
 | ---- | ---- |---- | ----  | ---- | ---- | ---- |  
 | 90210	| US	| CA	| California| 	Los Angeles | 34.0901	| -118.4065|  
 
-<br>
+<br><br>
 
 Based on the script, the nearest airport to 90210 is: KSMO is **Santa Monica Municipal Airport**
 
@@ -47,6 +47,7 @@ Based on the script, the nearest airport to 90210 is: KSMO is **Santa Monica Mun
 | ---- | ---- |---- | ----  |   
 | KSMO	| 34.01580048	| -118.4509964| 	9.222835746 |  
 
+<br><br>
 
 Let's validate the model by plotting in Google Maps:  
 
@@ -56,6 +57,7 @@ Let's validate the model by plotting in Google Maps:
 
 * Note that the formula doesn't consider the actual roads in the location. Haversine simply calculates the distance from point A to point B.
 
+<br><br>
 Now, here's the second nearest airport: Bob Hope Airport (KBUR)
 
 | nearest-airport	| latitude-air |   longitude-air|distance (km)|  
