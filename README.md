@@ -37,9 +37,9 @@ Based on the script, the nearest airport to 90210 is:
 
 KSMO is **Santa Monica Municipal Airport**
 
-| nearest-airport	| latitude-air | longitude-air|distance (km)|
-| ---- | ---- |---- | ----  | ---- | ---- | ---- |  
-| KSMO	| 34.01580048	| -118.4509964| 	9.222835746 |
+| nearest-airport	| latitude-air | longitude-air|distance (km)|  
+| ---- | ---- |---- | ----  | ---- | ---- | ---- |    
+| KSMO	| 34.01580048	| -118.4509964| 	9.222835746 |  
 
 
 Let's validate the model by plotting in Google Maps:  
@@ -55,8 +55,8 @@ Now, here's the second nearest airport: Bob Hope Airport (KBUR)
 
 ![Nearest Airport](Assets/la-kbur.png)
 
-| nearest-airport	| latitude-air | longitude-air|distance (km)|
-| ---- | ---- |---- | ----  | ---- | ---- | ---- |
+| nearest-airport	| latitude-air |   longitude-air|distance (km)|  
+| ---- | ---- |---- | ----  | ---- | ---- | ---- |  
 |KBUR	|34.20069885	|-118.3590012|	13.05176636|
 
 Distance based on Haversine: 13.05 km
