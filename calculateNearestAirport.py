@@ -85,9 +85,24 @@ def closest(data, zipcode):
         }
         dl.append(ap)
     dl_sorted = sorted(dl, key=lambda k: k['distance'])
+    writeZipsToCSV(dl_sorted,zipcode['State Abbreviation'],zipcode['Zip Code'])
+
+
     return dl_sorted[0]
 
 
+
+
+def writeZipsToCSV(dl_sorted,state,zipcode):
+    output_folder = "Output/"+state+"/"
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+
+    with open(output_folder+zipcode"_all airports.csv","w") as csv_file:
+            dict_writer = csv.DictWriter(csv_file, dl_sorted[0].keys())
+            dict_writer.writeheader()
+            dict_writer.writerows(dl_sorted)
+            csv_file.close()
 # ------------------------------------------
 # ------- Orchestration & Output -----------
 # ------------------------------------------
@@ -121,7 +136,7 @@ def calculateNearestAirport(state):
 # -------- Orchestration (Terminal) --------
 # ------------------------------------------
 
-states_scope = getAllStates()[:2]
+states_scope = getAllStates()[1:2]
 
 perf_time = []
 
