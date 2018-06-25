@@ -2,6 +2,8 @@
 
 _Calculate the nearest airport of each zipcode using Python. Based on Haversine formula_
 
+**Keywords:** Python, Pandas, Geographical Data, Geography
+
 ## Overview
 
 ![Nearest Airport](Assets/nearestairport_flowchart.png)
@@ -20,6 +22,12 @@ _Calculate the nearest airport of each zipcode using Python. Based on Haversine 
 ## Business Use Case
 1. Sales Territory Planning
   * Determine if any targeted location can easily be accessed.
+
+
+## Notes
+
+  1. Nearest distance is based on [Haversine](https://stackoverflow.com/questions/41336756/find-the-closest-latitude-and-longitude) formula
+  2. Check out my [logs](logs.md) for more
 
 
 ## Sample Data: 90210, California
@@ -46,24 +54,18 @@ Let's validate the model by plotting in Google Maps:
 
 ![Nearest Airport](Assets/la-ksmo.png)
 
-The black line indicates the distance of 9.20 km from 90210 to the airport, which is close to 9.22km!
+* The black line indicates the distance of 9.20 km from 90210 to the airport, which is close to 9.22km!
 
-Note that the formula doesn't consider the actual roads in the location. Haversine simply calculates the distance from point A to point B.
+* Note that the formula doesn't consider the actual roads in the location. Haversine simply calculates the distance from point A to point B.
 
 Now, here's the second nearest airport: Bob Hope Airport (KBUR)
-
-
-![Nearest Airport](Assets/la-kbur.png)
 
 | nearest-airport	| latitude-air |   longitude-air|distance (km)|  
 | ---- | ---- |---- | ----  |  
 |KBUR	|34.20069885	|-118.3590012|	13.05176636|
 
-Distance based on Haversine: 13.05 km
-Distance based on Google Maps 13.03 km
 
+![Nearest Airport](Assets/la-kbur.png)
 
-## Notes
-
-1. Nearest distance is based on [Haversine](https://stackoverflow.com/questions/41336756/find-the-closest-latitude-and-longitude) formula
-2. Check out my [logs](logs.md) for more
+* Distance based on Haversine: 13.05 km  
+* Distance based on Google Maps 13.03 km
