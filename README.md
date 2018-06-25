@@ -8,6 +8,11 @@ _Calculate the nearest airport of each zipcode using Python. Based on Haversine 
 
 ![Nearest Airport](Assets/nearestairport_flowchart.png)
 
+
+## Business Use Case
+1. Sales Territory Planning
+  * Determine if any targeted location can easily be accessed.
+
 ## Inputs
 
 1. World Airports - Source: [Ourairports.com](http://ourairports.com/data/)
@@ -18,10 +23,6 @@ _Calculate the nearest airport of each zipcode using Python. Based on Haversine 
 1. CSV file per state/region, which contains the following:
   * All zipcodes
   * Nearest airport (code, lat and long) of each zipcode
-
-## Business Use Case
-1. Sales Territory Planning
-  * Determine if any targeted location can easily be accessed.
 
 
 ## Notes
@@ -69,3 +70,8 @@ Now, here's the second nearest airport: Bob Hope Airport (KBUR)
 
 * Distance based on Haversine: 13.05 km  
 * Distance based on Google Maps 13.03 km
+
+
+## Possible Enhancements
+
+  1. Add Part 2: travelability scores through Pandas binning
