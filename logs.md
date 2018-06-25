@@ -31,7 +31,7 @@ iso_state
 
 ```
 
-2. Input #2 - Zipcodes: https://www.aggdata.com/free/united-states-zip-codes
+2. Input #2 - Zipcodes:
 
 Columns:
 
@@ -49,3 +49,21 @@ Longitude
 3. Run the Model on how to calculate nearest airports
 
 4. Validate the model using google maps
+
+
+
+-------------------------
+
+
+Storytelling
+
+State = California
+558 airports
+2590 zipcodes
+
+
+State = NY
+410 airports
+2153 zipcodes
+
+Out of 558 airports in
