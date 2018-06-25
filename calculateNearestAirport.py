@@ -45,8 +45,12 @@ def getAirports(state):
     return df.to_dict('records')
 
 def getZipcodes(state):
-    df_filter = df_zipcodes[(df_zipcodes['State Abbreviation']==state)]
-    return df_filter.to_dict('records')
+    df = df_zipcodes[(df_zipcodes['State Abbreviation']==state)]
+    return df.to_dict('records')
+
+def getInfo(state):
+    print(len(getAirports(state)), "airports in", state)
+    print(len(getZipcodes(state)), "zipcode in", state)
 
 
 # ------------------------------------------
@@ -98,7 +102,7 @@ def writeZipsToCSV(dl_sorted,state,zipcode):
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
-    with open(output_folder+zipcode"_all airports.csv","w") as csv_file:
+    with open(output_folder+str(zipcode)+"_all airports.csv","w") as csv_file:
             dict_writer = csv.DictWriter(csv_file, dl_sorted[0].keys())
             dict_writer.writeheader()
             dict_writer.writerows(dl_sorted)
@@ -164,3 +168,6 @@ finally:
     print(entries, "zipcodes")
     for k in perf_time:
         print(k)
+
+
+#getInfo('NY')
