@@ -4,6 +4,8 @@ _Calculate the nearest airport of each zipcode using Python. Based on Haversine 
 
 **Keywords:** Python, Pandas, Geographical Data, Geography
 
+[Read the Blogpost!](http://eyana.me/nearest-distance-python/)
+
 ## Overview
 
 ![Nearest Airport](Assets/nearestairport_flowchart.png)
